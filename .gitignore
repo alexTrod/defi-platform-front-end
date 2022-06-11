@@ -22,5 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# contract addresses
+# copied build folder
 /src/chain-info
+brownie_config.json
