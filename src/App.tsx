@@ -1,8 +1,9 @@
-import * as React from "react";
-import logo from "./logo.svg";
-import { DAppProvider, ChainId } from "@usedapp/core";
-import {Header} from './components/header'
-import Button from "@mui/material/Button";
+import * as React from "react"
+import logo from "./logo.svg"
+import { DAppProvider, ChainId } from "@usedapp/core"
+import {Header} from "./components/header"
+import {Container} from "@mui/material"
+import { Main } from "./components/main"
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
         supportedChains: [ChainId.Kovan, ChainId.Rinkeby],
       }}
     >
-      <Header />    
+      <Header />
+      <Container maxWidth="md">
+        <Main />
+      </Container>
     </DAppProvider>
   );
 }

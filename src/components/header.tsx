@@ -1,9 +1,10 @@
 import React from 'react';
 import { useEthers } from "@usedapp/core";
-import Button from "@mui/material/Button";
+import { Button } from "@mui/material";
 
 export const Header = () => {
   const { account, activateBrowserWallet, deactivate } = useEthers();
+  console.log("account : " + account)
   const isConnected = account !== undefined;
 
   return (    
